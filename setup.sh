@@ -19,6 +19,10 @@ sudo ln -s /etc/phpmyadmin/apache.conf /etc/apache2/conf.d/phpmyadmin.conf
 
 sudo /etc/init.d/apache2 reload
 
+sudo apt-get install unzip
+wget http://ellislab.com/asset/ci_download_files/reactor/CodeIgniter_2.1.3.zip
+unzip CodeIgniter_2.1.3.zip
+
 
 exit 0
 
