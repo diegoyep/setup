@@ -53,6 +53,7 @@ ln -sf dotfiles/.emacs.d .
 mv php-mode.el ~/.emacs.d
 
 echo "change root file on /etc/apache2/site-availables/default file"
+echo "edit index.php on codeigniter and change error reporting settings and system folder setup"
 echo "and add php-mode to emacs"
 
 exit 0
