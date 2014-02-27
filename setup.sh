@@ -23,6 +23,10 @@ sudo apt-get install unzip
 wget http://ellislab.com/asset/ci_download_files/reactor/CodeIgniter_2.1.3.zip
 unzip CodeIgniter_2.1.3.zip
 
+mkdir root
+mv CodeIgniter_2.1.3 codeig
+mv codeig/index.php root
+
 sudo add-apt-repository -y ppa:cassou/emacs
 sudo apt-get -qq update
 sudo apt-get install -y emacs24-nox emacs24-el emacs24-common-non-dfsg
@@ -34,7 +38,8 @@ wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 wget https://raw.githubusercontent.com/ejmr/php-mode/master/php-mode.el
 mv php-mode.el ~/.emacs.d
 
-
+echo "change root file on /etc/apache2/site-availables/default file"
+echo "and add php-mode to emacs
 
 exit 0
 
