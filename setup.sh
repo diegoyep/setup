@@ -14,7 +14,7 @@ echo mysql-server-5.1 mysql-server/root_password password finalf  | debconf-set-
 echo mysql-server-5.1 mysql-server/root_password_again password finalf | debconf-set-selections
 apt-get install -y mysql-server
 
-sudo apt-get install phpmyadmin
+sudo apt-get -y install phpmyadmin
 sudo ln -s /etc/phpmyadmin/apache.conf /etc/apache2/conf.d/phpmyadmin.conf
 
 sudo /etc/init.d/apache2 reload
